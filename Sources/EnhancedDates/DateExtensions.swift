@@ -2,7 +2,7 @@ import Foundation
 
 // MARK: - Date Modifying Methods
 
-extension Date {
+public extension Date {
     
     func midnight() -> Date {
         let cal = Calendar(identifier: .gregorian)
@@ -12,7 +12,7 @@ extension Date {
 
 
 // MARK: - Static Methods
-extension Date {
+public extension Date {
 
     static func distantPast() -> Date {
 
@@ -30,7 +30,7 @@ extension Date {
 
 }
 
-extension Date {
+public extension Date {
 
     static func dates(from: Date, till: Date) -> [Date] {
         
@@ -105,7 +105,7 @@ extension Date {
 
 // The following extensions is adapted from: https://sarunw.com/posts/getting-number-of-days-between-two-dates/
 
-extension Calendar {
+public extension Calendar {
     
     func numberOfDaysBetween(_ from: Date, and to: Date) -> Int {
         let fromDate = startOfDay(for: from) // <1>
@@ -119,7 +119,7 @@ extension Calendar {
 
 // Note: The following extension are adapted from: https://stackoverflow.com/questions/33397101/how-to-get-mondays-date-of-the-current-week-in-swift
 
-extension Date {
+public extension Date {
   static func today() -> Date {
       return Date()
   }
@@ -168,7 +168,7 @@ func previous(_ weekday: Weekday, considerToday: Bool = false) -> Date {
 }
 
 // MARK: Helper methods
-extension Date {
+public extension Date {
   func getWeekDaysInEnglish() -> [String] {
     var calendar = Calendar(identifier: .gregorian)
     calendar.locale = Locale(identifier: "en_US_POSIX")
