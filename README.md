@@ -1,3 +1,3 @@
 # EnhancedDates
 
-A description of this package.
+A package containg useful extensions for working with Dates and Arrays containing Dates, in Swift.
